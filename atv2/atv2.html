@@ -1,8 +1,7 @@
-Para representar o relatório que você forneceu em HTML, utilizando a estrutura de títulos, parágrafos e, crucialmente, uma tabela para catalogar os artefatos, você pode usar o seguinte código.
+Para corrigir a semântica do código e torná-lo mais representativo do seu conteúdo (a tabela de classificação), o principal ajuste é mudar o título da página.
 
-Ele inclui as tags semânticas corretas para a estrutura (títulos) e a tag <table> com seus componentes (<thead>, <tbody>, <tr>, <th>, <td>).
+Abaixo está o código HTML "certo," com o título ajustado para refletir o conteúdo da tabela.
 
-Código HTML para o Relatório
 HTML
 
 <!DOCTYPE html>
@@ -10,120 +9,288 @@ HTML
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Relatório de Descoberta Arqueológica Digital</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        h1, h2 { color: #333; }
-        p { line-height: 1.6; }
-        table {
-            width: 100%;
-            border-collapse: collapse; /* Para linhas simples entre células */
-            margin-top: 20px;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
-            color: #000;
-        }
-        tfoot td {
-            font-weight: bold;
-            background-color: #e9e9e9;
-        }
-        /* Alinhamento para números */
-        td:nth-child(3), tfoot td:nth-child(3) {
-            text-align: right;
-        }
-    </style>
-</head>
+    <title>Tabela de Classificação do Campeonato Brasileiro</title>
+    </head>
 <body>
-
-    <h1>Relatório de Descoberta</h1>
-
-    <section>
-        <h2>Sumário</h2>
-        <ul>
-            <li><a href="#relatorio-descoberta">Relatório de Descoberta</a></li>
-            <li><a href="#analise-artefatos">Análise dos Artefatos</a></li>
-            <li><a href="#proximos-passos">Próximos Passos</a></li>
-        </ul>
-    </section>
-
-    <section id="relatorio-descoberta">
-        <h2>Relatório de Descoberta</h2>
-        <p>O <strong>Tesouro Perdido</strong> foi encontrado na <strong>ilha de Cyberspace</strong>. A descoberta é importante, pois a caixa continha artefatos muito valiosos.</p>
-
-        <h3>Detalhes da Descoberta</h3>
-        <p><strong>Localização da Caixa:</strong> Monte Sintaxe, Coordenada 12.</p>
-        <p><strong>Itens Encontrados:</strong></p>
-        <ul>
-            <li>Mapa antigo</li>
-            <li>Diário de bordo</li>
-            <li>Amuletos de jade</li>
-            <li>Bússola Criptografada</li>
-        </ul>
-    </section>
-
-    <section id="analise-artefatos">
-        <h2>Análise dos Artefatos</h2>
-        <p>Tabela com os artefatos catalogados pelos arqueólogos digitais:</p>
-
-        <table>
-            <thead>
-                <tr>
-                    <th>Categoria</th>
-                    <th>Artefato</th>
-                    <th>Peso (kg)</th>
-                    <th>Status</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Manuscrito</td>
-                    <td>Mapa Antigo</td>
-                    <td>0.8</td>
-                    <td>Em avaliação</td>
-                </tr>
-                <tr>
-                    <td>Manuscrito</td>
-                    <td>Diário de Bordo</td>
-                    <td>1.2</td>
-                    <td>Analisado</td>
-                </tr>
-                <tr>
-                    <td>Joalheria</td>
-                    <td>Amuleto de Jade (Pequeno)</td>
-                    <td>0.3</td>
-                    <td>Analisado</td>
-                </tr>
-                <tr>
-                    <td>Joalheria</td>
-                    <td>Amuleto de Jade (Grande)</td>
-                    <td>0.6</td>
-                    <td>Em avaliação</td>
-                </tr>
-                <tr>
-                    <td>Ferramenta</td>
-                    <td>Bússola Criptografada</td>
-                    <td>0.9</td>
-                    <td>Pendente</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td colspan="2">Total de peso</td> <td>3.8</td>
-                    <td></td> </tr>
-            </tfoot>
-        </table>
-    </section>
-
-    <section id="proximos-passos">
-        <h2>Próximos Passos</h2>
-        <p>Esta seção será preenchida após a avaliação final dos artefatos "Em avaliação" e "Pendente".</p>
-    </section>
-
+<table>
+    <caption>Tabela de Classificação - Campeonato Brasileiro</caption>
+    <thead>
+        <tr>
+            <th>Pos.</th>
+            <th>Time</th>
+            <th>P</th>
+            <th>J</th>
+            <th>V</th>
+            <th>E</th>
+            <th>D</th>
+            <th>GP</th>
+            <th>GC</th>
+            <th>SG</th>
+            <th>%</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Palmeiras</td>
+            <td>58</td>
+            <td>26</td>
+            <td>18</td>
+            <td>4</td>
+            <td>4</td>
+            <td>46</td>
+            <td>22</td>
+            <td>+24</td>
+            <td>74</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Flamengo</td>
+            <td>55</td>
+            <td>26</td>
+            <td>16</td>
+            <td>7</td>
+            <td>3</td>
+            <td>50</td>
+            <td>13</td>
+            <td>+37</td>
+            <td>70</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Cruzeiro</td>
+            <td>52</td>
+            <td>27</td>
+            <td>15</td>
+            <td>7</td>
+            <td>5</td>
+            <td>40</td>
+            <td>20</td>
+            <td>+20</td>
+            <td>64</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Mirassol</td>
+            <td>46</td>
+            <td>27</td>
+            <td>12</td>
+            <td>10</td>
+            <td>5</td>
+            <td>44</td>
+            <td>29</td>
+            <td>+15</td>
+            <td>56</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Botafogo</td>
+            <td>43</td>
+            <td>27</td>
+            <td>12</td>
+            <td>7</td>
+            <td>8</td>
+            <td>37</td>
+            <td>23</td>
+            <td>+14</td>
+            <td>53</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Bahia</td>
+            <td>43</td>
+            <td>26</td>
+            <td>12</td>
+            <td>7</td>
+            <td>7</td>
+            <td>34</td>
+            <td>30</td>
+            <td>+4</td>
+            <td>55</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Fluminense</td>
+            <td>38</td>
+            <td>26</td>
+            <td>11</td>
+            <td>5</td>
+            <td>10</td>
+            <td>34</td>
+            <td>33</td>
+            <td>+1</td>
+            <td>48</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>São Paulo</td>
+            <td>38</td>
+            <td>27</td>
+            <td>10</td>
+            <td>8</td>
+            <td>9</td>
+            <td>31</td>
+            <td>28</td>
+            <td>+3</td>
+            <td>46</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Red Bull Bragantino</td>
+            <td>36</td>
+            <td>27</td>
+            <td>10</td>
+            <td>6</td>
+            <td>11</td>
+            <td>33</td>
+            <td>38</td>
+            <td>-5</td>
+            <td>44</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>Ceará</td>
+            <td>34</td>
+            <td>26</td>
+            <td>9</td>
+            <td>7</td>
+            <td>10</td>
+            <td>26</td>
+            <td>24</td>
+            <td>+2</td>
+            <td>43</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>Vasco da Gama</td>
+            <td>33</td>
+            <td>27</td>
+            <td>9</td>
+            <td>6</td>
+            <td>12</td>
+            <td>42</td>
+            <td>41</td>
+            <td>+1</td>
+            <td>40</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>Corinthians</td>
+            <td>33</td>
+            <td>27</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>29</td>
+            <td>32</td>
+            <td>-3</td>
+            <td>40</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>Grêmio</td>
+            <td>33</td>
+            <td>27</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>28</td>
+            <td>33</td>
+            <td>-5</td>
+            <td>40</td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>Atlético Mineiro</td>
+            <td>32</td>
+            <td>26</td>
+            <td>8</td>
+            <td>8</td>
+            <td>10</td>
+            <td>25</td>
+            <td>30</td>
+            <td>-5</td>
+            <td>41</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>Internacional</td>
+            <td>32</td>
+            <td>26</td>
+            <td>8</td>
+            <td>8</td>
+            <td>10</td>
+            <td>32</td>
+            <td>38</td>
+            <td>-6</td>
+            <td>41</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>Santos</td>
+            <td>28</td>
+            <td>26</td>
+            <td>7</td>
+            <td>7</td>
+            <td>12</td>
+            <td>25</td>
+            <td>38</td>
+            <td>-13</td>
+            <td>35</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td>Vitória</td>
+            <td>25</td>
+            <td>27</td>
+            <td>5</td>
+            <td>10</td>
+            <td>12</td>
+            <td>24</td>
+            <td>42</td>
+            <td>-18</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td>Fortaleza</td>
+            <td>24</td>
+            <td>26</td>
+            <td>6</td>
+            <td>6</td>
+            <td>14</td>
+            <td>26</td>
+            <td>41</td>
+            <td>-15</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td>Juventude</td>
+            <td>23</td>
+            <td>27</td>
+            <td>6</td>
+            <td>5</td>
+            <td>16</td>
+            <td>22</td>
+            <td>52</td>
+            <td>-30</td>
+            <td>28</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>Sport</td>
+            <td>16</td>
+            <td>26</td>
+            <td>2</td>
+            <td>10</td>
+            <td>14</td>
+            <td>20</td>
+            <td>41</td>
+            <td>-21</td>
+            <td>20</td>
+        </tr>
+    </tbody>
+</table>
 </body>
 </html>
