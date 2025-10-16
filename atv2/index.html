@@ -1,0 +1,129 @@
+Para representar o relatório que você forneceu em HTML, utilizando a estrutura de títulos, parágrafos e, crucialmente, uma tabela para catalogar os artefatos, você pode usar o seguinte código.
+
+Ele inclui as tags semânticas corretas para a estrutura (títulos) e a tag <table> com seus componentes (<thead>, <tbody>, <tr>, <th>, <td>).
+
+Código HTML para o Relatório
+HTML
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório de Descoberta Arqueológica Digital</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1, h2 { color: #333; }
+        p { line-height: 1.6; }
+        table {
+            width: 100%;
+            border-collapse: collapse; /* Para linhas simples entre células */
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+            color: #000;
+        }
+        tfoot td {
+            font-weight: bold;
+            background-color: #e9e9e9;
+        }
+        /* Alinhamento para números */
+        td:nth-child(3), tfoot td:nth-child(3) {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Relatório de Descoberta</h1>
+
+    <section>
+        <h2>Sumário</h2>
+        <ul>
+            <li><a href="#relatorio-descoberta">Relatório de Descoberta</a></li>
+            <li><a href="#analise-artefatos">Análise dos Artefatos</a></li>
+            <li><a href="#proximos-passos">Próximos Passos</a></li>
+        </ul>
+    </section>
+
+    <section id="relatorio-descoberta">
+        <h2>Relatório de Descoberta</h2>
+        <p>O <strong>Tesouro Perdido</strong> foi encontrado na <strong>ilha de Cyberspace</strong>. A descoberta é importante, pois a caixa continha artefatos muito valiosos.</p>
+
+        <h3>Detalhes da Descoberta</h3>
+        <p><strong>Localização da Caixa:</strong> Monte Sintaxe, Coordenada 12.</p>
+        <p><strong>Itens Encontrados:</strong></p>
+        <ul>
+            <li>Mapa antigo</li>
+            <li>Diário de bordo</li>
+            <li>Amuletos de jade</li>
+            <li>Bússola Criptografada</li>
+        </ul>
+    </section>
+
+    <section id="analise-artefatos">
+        <h2>Análise dos Artefatos</h2>
+        <p>Tabela com os artefatos catalogados pelos arqueólogos digitais:</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Categoria</th>
+                    <th>Artefato</th>
+                    <th>Peso (kg)</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Manuscrito</td>
+                    <td>Mapa Antigo</td>
+                    <td>0.8</td>
+                    <td>Em avaliação</td>
+                </tr>
+                <tr>
+                    <td>Manuscrito</td>
+                    <td>Diário de Bordo</td>
+                    <td>1.2</td>
+                    <td>Analisado</td>
+                </tr>
+                <tr>
+                    <td>Joalheria</td>
+                    <td>Amuleto de Jade (Pequeno)</td>
+                    <td>0.3</td>
+                    <td>Analisado</td>
+                </tr>
+                <tr>
+                    <td>Joalheria</td>
+                    <td>Amuleto de Jade (Grande)</td>
+                    <td>0.6</td>
+                    <td>Em avaliação</td>
+                </tr>
+                <tr>
+                    <td>Ferramenta</td>
+                    <td>Bússola Criptografada</td>
+                    <td>0.9</td>
+                    <td>Pendente</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Total de peso</td> <td>3.8</td>
+                    <td></td> </tr>
+            </tfoot>
+        </table>
+    </section>
+
+    <section id="proximos-passos">
+        <h2>Próximos Passos</h2>
+        <p>Esta seção será preenchida após a avaliação final dos artefatos "Em avaliação" e "Pendente".</p>
+    </section>
+
+</body>
+</html>

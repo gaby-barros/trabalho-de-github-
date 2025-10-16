@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Voluntários</title>
+    </head>
+<body>
+<div class="formulario">
+    <h1>Inscrição para Voluntários</h1>
+    <p>Preencha os campos abaixo.</p>
+    <form action="/enviar-dados" method="POST">
+    <label for="nome">Nome Completo:</label>
+    <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="nome.sobrenome@128gmail.com" required>
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade" min="18" placeholder="Mínimo 18 anos" required>
+        <label for="data_inicial">Data de Disponibilidade para Início:</label>
+        <input type="date" id="data_inicial" name="data_inicial" required>
+        <label for="area">Principal Área de Interesse:</label>
+        <select id="area" name="area_interesse" required>
+            <option value="" disabled selected>Escolha uma opção</option>
+            <option value="gis">GIS/Mapeamento</option>
+            <option value="modelagem">Modelagem 3D</option>
+            <option value="analise">Análise de Dados</option>
+        </select>
+        <label>Possui CNH B?</label>
+        <div>
+            <input type="checkbox" id="cnh" name="cnh_possui" value="sim">
+            <label for="cnh">Sim, possuo</label>
+        </div>
+        <br>
+        <label for="motivacao">Motivação (Por que quer participar?)</label>
+        <textarea id="motivacao" name="motivacao" rows="4" placeholder="Conte-nos sobre seu interesse..."></textarea>
+        <br>
+        <button type="submit">Enviar Minha Candidatura</button>
+    </form>
+</div>
+</body>
+</html>
