@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clube de Regatas do Flamengo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        header {
+            background-color: #d60000; /* Vermelho Flamengo */
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header .logo {
+            max-width: 100px;
+            margin-bottom: 10px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #000; /* Preto Flamengo */
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 0;
+            display: block;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            background-color: #d60000;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .destaque {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .destaque img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .noticias, .socio-torcedor, .proximos-jogos {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+        .noticias:last-of-type, .socio-torcedor:last-of-type, .proximos-jogos:last-of-type {
+            border-bottom: none;
+        }
+        h2 {
+            color: #d60000;
+            border-bottom: 2px solid #d60000;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        h3 {
+            color: #000;
+            margin-bottom: 10px;
+        }
+        ul.lista-noticias {
+            list-style: disc;
+            margin-left: 20px;
+        }
+        ul.lista-noticias li {
+            margin-bottom: 10px;
+        }
+        .socio-torcedor p {
+            line-height: 1.6;
+        }
+        .socio-torcedor button {
+            background-color: #d60000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+        .socio-torcedor button:hover {
+            background-color: #a00;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        table th {
+            background-color: #f2f2f2;
+            color: #333;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+            font-size: 0.9em;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="https://pt.wikipedia.org/wiki/Ficheiro:Flamengo-RJ_%28BRA%29.png" alt="Logotipo do Flamengo" class="logo">
+        <h1>CLUBE DE REGATAS DO FLAMENGO 🏆</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Clube</a></li>
+            <li><a href="#">Futebol</a></li>
+            <li><a href="#">Esportes Olímpicos</a></li>
+            <li><a href="#">Notícias</a></li>
+            <li><a href="#">Sócio-Torcedor</a></li>
+            <li><a href="#">Loja Oficial</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section class="destaque">
+            <h2>DESTAQUE DO DIA</h2>
+            <h3>VITÓRIA NO CLÁSSICO! MENGÃO GARANTE OS TRÊS PONTOS E MANTÉM A LIDERANÇA</h3>
+            <img src="https://c7.alamy.com/comp/2GM0W6N/rio-de-janeiro-rj-15092021-flamengo-grmio-pedro-jogador-do-flamengo-comemora-seu-goldurante-partida-contra-o-grmiovlida-pelas-quartas-de-2GM0W6N.jpg">
+            <p>O time principal demonstrou força e garra ao vencer o clássico por 2 a 0 neste fim de semana. Os gols foram marcados no segundo tempo, após forte pressão ofensiva na casa do adversário. A torcida vibra com mais um resultado positivo.</p>
+        </section>
+
+        <section class="noticias">
+            <h2>ÚLTIMAS NOTÍCIAS</h2>
+            <ul class="lista-noticias">
+                <li>
+                    <h3>Fim de semana perfeito para o Basquete</h3>
+                    <p>O time de basquete do Flamengo, o Orgulho da Nação, venceu dois jogos seguidos e se classifica para a próxima fase do campeonato.</p>
+                </li>
+                <li>
+                    <h3>Base Forte: Sub-20 avança na Copa</h3>
+                    <p>Os jovens talentos do Ninho do Urubu continuam brilhando! Com uma vitória de virada, a categoria Sub-20 garante sua vaga nas semifinais da Copa.</p>
+                </li>
+                <li>
+                    <h3>Natação de Ouro</h3>
+                    <p>Atletas do Flamengo conquistam medalhas de ouro em diversas modalidades no Campeonato Brasileiro de Natação, reforçando a força dos Esportes Olímpicos do clube.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="socio-torcedor">
+            <h2>SÓCIO-TORCEDOR: FAÇA PARTE DA MAIOR NAÇÃO DO MUNDO!</h2>
+            <p>Não fique de fora! Ao se tornar Sócio-Torcedor, você garante:</p>
+            <ul>
+                <li>Prioridade na compra e descontos exclusivos nos ingressos.</li>
+                <li>Experiências únicas e acesso a eventos exclusivos.</li>
+                <li>Descontos em produtos oficiais e parceiros do clube.</li>
+            </ul>
+            <p><strong>Assine agora e comece a torcer com mais vantagens!</strong></p>
+            <button>SEJA SÓCIO AGORA!</button>
+        </section>
+
+        <section class="proximos-jogos">
+            <h2>PRÓXIMOS JOGOS</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Competição</th>
+                        <th>Adversário</th>
+                        <th>Data</th>
+                        <th>Horário</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Campeonato Brasileiro</td>
+                        <td>Corinthians</td>
+                        <td>19/11 (Quarta)</td>
+                        <td>21:30</td>
+                    </tr>
+                    <tr>
+                        <td>Copa do Brasil</td>
+                        <td>São Paulo</td>
+                        <td>26/11 (Sábado)</td>
+                        <td>16:00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <footer>
+        <p>
+            <strong>Redes Sociais:</strong>
+            <a href="#">Facebook</a> |
+            <a href="#">Instagram</a> |
+            <a href="#">Twitter</a> |
+            <a href="#">YouTube</a> |
+            <a href="#">TikTok</a>
+        </p>
+        <p>
+            <strong>Fale Conosco:</strong>
+            <a href="#">Fale Conosco (Formulário)</a> |
+            <a href="#">Ouvidoria</a> |
+            <a href="#">Imprensa</a>
+        </p>
+        <p>&copy; 2024 Clube de Regatas do Flamengo Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
